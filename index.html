@@ -7,31 +7,48 @@
 
        <!-- tailwind link -->
        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+       
 
        <!-- font awesome link -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-           
+      
+            
         <!-- google font link -->
             <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+          
+        <script>
+    tailwind.config = {
+      theme: {
+        extend: {
 
+            fontFamily: {
+  noto: ['"Noto Serif"', 'serif'],
+}
+
+         
+        }
+      }
+    }
+  </script>
 
 </head>
-<body>
+<body class="font-noto">
     <!-- Navbar section start here -->
      <div class="flex items-center justify-between w-11/12 mx-auto my-8"> 
         <div>
-             <img src="assets/logo.png" alt="">
+             <img src="assets/logo.png" class="lg:w-[135px] lg:h-[82px]  w-[63px] h-[38px]" alt="">
         </div>
 
     <div class=" ">
         <ul class="flex items-center justify-center gap-10 text-gray-400 text-base font-medium">
-            <li class="text-black font-bold ">Home</li>
-            <li class=" hover:text-black">Shop</li>
-            <li class=" hover:text-black">About us</li>
-            <i class="fa-solid fa-cart-shopping text-black"></i>
-            <span class="text-black font-medium">Cart ($56)</span>
+            <li class="text-black font-bold lg:block hidden ">Home</li>
+            <li class=" hover:text-black  lg:block hidden ">Shop</li>
+            <li class=" hover:text-black  lg:block hidden ">About us</li>
+
+       
+            <span class="text-black font-medium"><i class="fa-solid fa-cart-shopping mr-1"></i>Cart ($56)</span>
     
             </li>
         </ul>
@@ -42,16 +59,16 @@
 
     <!-- banner section start here -->
      <div class="w-11/12 mx-auto "> 
-        <div class="flex gap-5 "> 
+        <div class="grid grid-cols-1 lg:grid-cols-2  items-end gap-5 "> 
               <!-- lefy side div  -->
-        <div class="space-y-3 border w-1/2 border-red-700"> 
-            <p class="lg:text-5xl font-semibold  text-xl font-family:'Noto Serif' "> ALWAYS<span class="text-orange-500"> FRESH<br>FLOWERS </span></p>
-            <p class="text-sm text-gray-400"> Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
+        <div class="space-y-3  "> 
+            <p class="lg:text-6xl font-bold font-noto  text-xl"> ALWAYS<span class="text-orange-500"> FRESH<br>FLOWERS </span></p>
+            <p class="text-base text-gray-400 text-"> Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
          </div> 
 
          <!-- right side div -->
-        <div class="border w-1/2 border-red-700 justify-end "> 
-            <img class="h-[360px] w-[570px]" src="assets/hero-flower.png" alt="">
+        <div class="flex justify-end "> 
+            <img class=" " src="assets/hero-flower.png" alt="">
         </div>
 
 
@@ -198,6 +215,31 @@
       </div>
      
      <!-- Our Plants section end here -->
+
+     <!-- Flower & Plants Lover section start here -->
+      <div class="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5">  
+        <!-- left side div -->
+        <div>
+            <img src="assets/trusted-badge.png" class="mx-auto h-56" alt=""> 
+            <img src="assets/flower-store.png" class="mx-auto" alt="">
+
+        </div>
+        <!-- right side div -->
+        <div class="py-20"> 
+            <h2 class="text-xl lg:text-5xl font-semibold"> Flower & Plants Lover</h2>
+            <ul class="space-y-3 py-4" type=""> 
+                <li class="text-gray-500 font-semibold"> Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+                <li> Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+                <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh. </li>
+            </ul>
+
+        </div>
+
+
+      </div>
+     <!-- Flower & Plants Lover section end here -->
+
+
 
 
  
